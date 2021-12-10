@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.card{
+    width: 500px;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+}
+
+section{
+    background: rgb(202,227,230);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    /*min-height: 100vh; */
+}
+
+.header{
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    background-color: rgb(28, 70, 74);;
+}
+
+.header img{
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    gap: 0px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info .profile-container{
+    height: 12rem;
+}
+
+.profile{
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    top: -7rem;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 6px solid white;    
+}
+
+.info .profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .info p{
+    padding:4px;
+    font-size: 2rem;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: rgb(101, 114, 116);
+}
+
+.info p:nth-child(2){
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.button-container{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    /*background-color: violet;*/
+    gap: 0px;
+}
+
+.button-container button{
+    width: 90%;
+    height: 100%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(28, 70, 74);
+    border-style: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.button-container .button-github {
+    background-image: url(/images/github2.png);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: center;
+}
+
+.button-container .button-linkedin {
+    background-image: url(/images/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: center;
+}
